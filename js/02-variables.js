@@ -1,41 +1,43 @@
 /*
 Iniciavimas - vietos isskyrimas kompiuterio atmintyje.
-
-Kintamuju iniciavimo budai:
-
-const - konstanta; kintamasis, kurio reiksme negali buti keiciama;
+KINTAMUJU INICIAVIMO BUDAI:
+const - konstanta; kintamasis, kurio reiksme negali buti keiciama - DEFAULT;
 let - kintamasis, kurio reiksme gali buti keiciama;
-var - kintamasis, kurio reiksme gali buti keiciama, taciau nerekomenduojama naudoti;
-
-Kintamuju tipai:
+var - kintamasis, kurio reiksme gali buti keiciama, taciau nerekomenduojam naudoti;
+KINTAMUJU TIPAI:
 tekstas - (string) - rasomas tarp kabuciu;
 skaicius - (number) - rasomi skaiciai;
-sarasas, masyvas, listas - (array) - sarasas 
-reiksmiu, kuriu tipas gali buti bet koks, 
-taciau rekomenduotina, jog sarasa sudarytu vieno tipo reiksmes;
+sarasas, masyvas, listas, arejus - (array) - sarasas reiksmiu, kuriu tipas gali buti betkoks, taciau rekomenduotina, jog sarasa sudarytu vieno tipo reiksmes;
 */
 
 const name = 'Petras';
 console.log(name);
 
-const balance = 99;
+const lastName = 'Pavardenis';
+console.log(lastName);
+
+let balance = 99;
 console.log(balance);
 
 const curency = 'eur';
+console.log(curency);
+
+balance = 999;
+balance = 10;
+balance = -10;
 console.log(balance);
 
 const skaicius1 = 5;
 console.log(skaicius1);
 
-const skaicius2 = 15;
+const skaicius2 = 7.46;
 console.log(skaicius2);
 
-const skaicius3 = 54;
+const skaicius3 = -84.3;
 console.log(skaicius3);
 
-const pazymiai = [10, 2, 8, 6, 4];
+const pazymiai = [10, 2, 8, 6];
 console.log(pazymiai);
 
-const studentai = ['Petras', 'Onute', 'Gytis']
+const studentai = ['Petriukas', 'Onute', 'Maryte', 'Jonukas', 'Alphe', 'Ra'];
 console.log(studentai);
-
