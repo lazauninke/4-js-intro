@@ -13,17 +13,27 @@ console.log(multi);
 const divide = nr1 / nr2;
 console.log(divide);
 
-const combo = (nr1 + nr2) * (5 / nr2)
-console.log (combo);
+const combo = (nr1 + nr2) * (10 / nr2);
+console.log(combo);
 
-const eiliskumas = 1 + 2 - 4 * 5 / 10;
+const eiliskumas = 1 + (2 - 4) * 5 / 10;
 console.log(eiliskumas);
 
-const firstName = 'Vardenis';
-const lastName = 'Pavardenis';
 
-const fullName = firstName + ' ' + lastName;
-console.log(fullName)
+const firstName = 'Petras';
+const lastName = 'Petraitis';
+
+const fullName = firstName + ' ' + lastName + '!';
+console.log(fullName);
 
 const sayHi = 'Labas, ' + firstName + '!';
 console.log(sayHi);
+
+
+// parodom, jog kintamuju pavadinimai yra case-sensitive
+const FirstName = 'Jonas';
+
+
+console.log(firstName);
+console.log(FirstName);
+console.log(firstname);
