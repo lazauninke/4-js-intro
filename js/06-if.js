@@ -30,7 +30,7 @@ if (a == b) {
 }
 
 const c = 2;
-const d = 9;
+const d = 9; 
 
 if (c >= d) {
     console.log('c daugiau arba lygu uz d');

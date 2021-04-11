@@ -2,7 +2,7 @@
 /*
 Galimi variantai, kaip inicijuoti teksta:
 - viengubos kabutes
-- dvygubos kabutes
+- dvigubos kabutes
 - backtick
 Rekomendacija:
 - viengubas ir dvygubas naudoti, tik jei inicijuojate tekstini kintamaji, kai jame informacija yra viena eilute;
@@ -24,15 +24,15 @@ const kabute1 = "Cia yra vienguba (') kabute.";
 console.log(kabute1);
 
 // Cia yra dvyguba (") kabute.
-const kabute2 = 'Cia yra dvyguba (") kabute.';
+const kabute2 = 'Cia yra dviguba (") kabute.';
 console.log(kabute2);
 
 // Cia yra vienguba (') ir dvyguba (") kabutes.
-const kabute12 = 'Cia yra vienguba (\') ir dvyguba (\") kabutes.';
+const kabute12 = 'Cia yra vienguba (\') ir dviguba (\") kabutes.';
 console.log(kabute12);
 
 // Cia yra dvyguba (") ir vienguba (') kabutes.
-const kabute21 = "Cia yra dvyguba (\") ir vienguba (\') kabutes.";
+const kabute21 = "Cia yra dviguba (\") ir vienguba (\') kabutes.";
 console.log(kabute21);
 
 const fullName = vardas + ' ' + pavarde;

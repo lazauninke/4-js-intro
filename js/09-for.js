@@ -49,3 +49,16 @@ const div = 3;
 
 const rem = num1 % div;
 console.log(rem);
+
+console.log('------------------');
+
+const nuo4 = -70;
+const iki4 = 30;
+let suma3 = 0;
+
+for (let i = nuo4; i <= iki4; i++) {
+    suma3 += i;
+}
+
+const ats = 'Intervale nu iki ${iki3} suma yra ${suma3}';
+console.log(ats);
