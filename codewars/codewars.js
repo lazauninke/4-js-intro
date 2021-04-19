@@ -138,4 +138,59 @@ console.log(correctPolishLetters("Maria Skłodowska-Curie"),"Maria Sklodowska-Cu
 
 
 
+console.log('--------All Star Code Challenge #18-----------');
 
+function strCount(str, letter){  
+  let strsum = 0;
+    for (let i = 0; i < str.length; i++){
+      if (letter === str[i]){
+       strsum += 1;
+  }
+}
+    return strsum;
+}
+
+
+console.log(strCount('Hello', 'o'), 1);
+console.log(strCount('Hello', 'l'), 2);
+console.log(strCount('', 'z'), 0);
+
+
+
+console.log('-----Is it even?------');
+
+
+function testEven(n) {
+    if (n % 2 === 0) {
+      return true;
+    }else{
+      return false;
+    }
+}
+
+console.log(testEven(0), true, "testEven for 0");
+console.log(testEven(0.5), false, "testEven for 0.5");
+console.log(testEven(1), false, "testEven for 1");
+console.log(testEven(2), true, "testEven for 2");
+console.log(testEven(-4), true, "testEven for 2");
+
+
+console.log('-------------');
+
+
+function countSheeps(arrayOfSheep) {
+  let array1 = 0;
+  if (array1 === true) {
+    array1 += 1;
+  }
+  return array1;
+}
+
+let array1 = [true,  true,  true,  false,
+  true,  true,  true,  true ,
+  true,  false, true,  false,
+  true,  false, false, true ,
+  true,  true,  true,  true ,
+  false, false, true,  true ];
+  
+console.log(countSheeps(array1) == 17, "There are 17 sheeps in total")
