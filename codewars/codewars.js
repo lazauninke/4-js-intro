@@ -175,6 +175,7 @@ console.log(testEven(2), true, "testEven for 2");
 console.log(testEven(-4), true, "testEven for 2");
 
 
+
 console.log('-------------');
 
 
@@ -194,3 +195,167 @@ let array1 = [true,  true,  true,  false,
   false, false, true,  true ];
   
 console.log(countSheeps(array1) == 17, "There are 17 sheeps in total")
+
+
+
+console.log('--------Will you make it?--------');
+
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  if ((fuelLeft * mpg) >= distanceToPump) {
+    return true;
+  }
+  return false;
+};
+
+
+    console.log(zeroFuel(50, 25, 2), true);
+    console.log(zeroFuel(100, 50, 1), false);
+
+
+
+console.log('------Find the Difference in Age between Oldest and Youngest Family Members-----');
+
+
+function differenceInAges(ages){
+
+let youngest = ages[0];
+let oldest = ages[0];
+
+for (let i = 1; i < ages.length; i++) {
+
+  if (ages[i] > oldest) {
+    oldest = ages[i];
+  }
+  if (ages[i] < youngest) {
+    youngest = ages[i];
+  
+  }
+  }
+
+  const difference = oldest - youngest;
+  return [youngest, oldest, difference];
+}
+
+console.log(differenceInAges([82, 15, 6, 38, 35]), [6, 82, 76]);
+console.log(differenceInAges([57, 99, 14, 32]), [14, 99, 85]);
+
+
+
+console.log('------Find the Difference in Age between Oldest and Youngest Family Members-----');
+
+
+function differenceInAges (ages) {
+
+  let max = Math.max(...ages),
+      min = Math.min(...ages)
+      diff = max - min
+      
+  return [min, max, diff]
+}
+
+console.log(differenceInAges([82, 15, 6, 38, 35]), [6, 82, 76]);
+console.log(differenceInAges([57, 99, 14, 32]), [14, 99, 85]);
+
+
+
+
+console.log('------Is he gonna survive?------');
+
+
+function hero(bullets, dragons){
+  if (bullets / dragons < 2){
+    return false;
+  }
+    return true;
+  }
+  
+
+//return (bullets / 2 >= dragons) ? true : false;
+
+console.log(hero(10, 5), true);
+console.log(hero(7, 4), false);
+console.log(hero(4, 5), false);
+console.log(hero(100, 40), true);
+console.log(hero(1500, 751), false);
+console.log(hero(0, 1), false);
+
+
+
+console.log('------L1: Bartender, drinks!------');
+
+function getDrinkByProfession(param){
+
+  let a = param.toLowerCase ();
+  let drink = '';
+  if (a === 'jabroni') {drink = 'Patron Tequila'}
+  else if (a === 'school counselor') {drink = 'Anything with Alcohol'}
+  else if (a === 'programmer') {drink = 'Hipster Craft Beer'}
+  else if (a === 'bike gang member') {drink = 'Moonshine'}
+  else if (a === 'politician') {drink = 'Your tax dollars'}
+  else if (a === 'rapper') {drink = 'Cristal'}
+  else {return 'Beer'}
+    return drink;
+}
+
+
+console.log(getDrinkByProfession("jabrOni"), "Patron Tequila", "'Jabroni' should map to 'Patron Tequila'");
+console.log(getDrinkByProfession("scHOOl counselor"), "Anything with Alcohol", "'School Counselor' should map to 'Anything with alcohol'");
+console.log(getDrinkByProfession("prOgramMer"), "Hipster Craft Beer", "'Programmer' should map to 'Hipster Craft Beer'");
+console.log(getDrinkByProfession("bike ganG member"), "Moonshine", "'Bike Gang Member' should map to 'Moonshine'");
+console.log(getDrinkByProfession("poLiTiCian"), "Your tax dollars", "'Politician' should map to 'Your tax dollars'");
+console.log(getDrinkByProfession("rapper"), "Cristal", "'Rapper' should map to 'Cristal'");
+console.log(getDrinkByProfession("pundit"), "Beer", "'Pundit' should map to 'Beer'");
+console.log(getDrinkByProfession("Pug"), "Beer", "'Pug' should map to 'Beer'");
+
+
+
+console.log('-----You Cant Code Under Pressur-----');
+
+
+function doubleInteger(i) {
+  i *= 2;
+   return i;
+ }
+
+
+
+console.log(doubleInteger(2), 4);
+
+
+function tripleTrouble(one, two, three){
+  let sum = '';
+  for (let i = 0; i < one.length; i++) {
+    sum += one[i];
+    sum += two[i];
+    sum += three[i];
+  }
+    return sum;
+ }
+
+console.log(tripleTrouble("this","test","lock"), "ttlheoiscstk");
+console.log(tripleTrouble("aa","bb","cc"), "abcabc");
+console.log(tripleTrouble("Bm", "aa", "tn"), "Batman");
+console.log(tripleTrouble("LLh","euo","xtr"), "LexLuthor");
+
+
+
+console.log('-----Beginner Series #2 Clock-----');
+
+
+function past(h, m, s){
+  const hours = h * 3600;
+  const minutes = m * 60;
+  const sec = s * 1;
+  return (hours + minutes + sec) * 1000;
+}
+
+
+console.log(past(0,1,1),61000)
+console.log(past(1,1,1),3661000)
+console.log(past(0,0,0),0)
+console.log(past(1,0,1),3601000)
+console.log(past(1,0,0),3600000)
+
+
+
