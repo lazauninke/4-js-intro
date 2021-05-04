@@ -359,3 +359,97 @@ console.log(past(1,0,0),3600000)
 
 
 
+console.log('-----Grasshopper - Summation-----');
+
+
+var summation = function (num) {
+  let sum = 0;
+  for (let i = 0; i <= num; i++) {
+    sum += i;
+  }
+  return sum;
+}
+
+console.log(summation(1), 1)
+console.log(summation(8), 36)
+
+
+
+console.log('-----Opposite number-----');
+
+function opposite(number) {
+  return (-number);
+}
+
+console.log(opposite(1), -1,)
+
+
+
+console.log('-----Keep Hydrated!------grazina tik sveikus skaicius');
+
+function litres(time) {
+  return parseInt (time / 2);
+}
+
+
+
+console.log(litres(2), 1, 'should return 1 litre');
+console.log(litres(1.4), 0, 'should return 0 litres');
+console.log(litres(12.3), 6, 'should return 6 litres');
+console.log(litres(0.82), 0, 'should return 0 litres');
+console.log(litres(11.8), 5, 'should return 5 litres');
+console.log(litres(1787), 893, 'should return 893 litres');
+console.log(litres(0), 0, 'should return 0 litres');
+
+
+
+console.log('------Area or Perimeter------');
+
+
+const areaOrPerimeter = function(l , w) {
+  if (l === w) {
+    return (l * w);
+  } else{
+    return ((l + w) * 2);
+  }
+};
+
+console.log(areaOrPerimeter(4 , 4) , 16);
+console.log(areaOrPerimeter(6 , 10) , 32);
+
+
+
+console.log('-----Century From Year-----');
+
+
+function century(year) {
+  let cent = parseInt (year / 100); 
+    if ((year / 100) % 1 > 0); {
+      cent += 1;
+    }
+      
+    return cent;
+}
+
+console.log(century(1705), 18, 'Testing for year 1705');
+console.log(century(1900), 19, 'Testing for year 1900');
+console.log(century(1601), 17, 'Testing for year 1601');
+console.log(century(2000), 20, 'Testing for year 2000');
+console.log(century(89), 1, 'Testing for year 89');
+
+
+
+console.log('-----Will there be enough space?...------');
+
+function enough(cap, on, wait) {
+  let liko = on + wait;
+  if (cap >= liko) {
+    return 0;
+  }
+  return liko - cap;
+}
+
+
+console.log(enough(10, 5, 5), 0);
+console.log(enough(100, 60, 50), 10);
+console.log(enough(20, 5, 5), 0);
